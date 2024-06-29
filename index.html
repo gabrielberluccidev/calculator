@@ -15,41 +15,41 @@
   </head>
   <body>
     <div class="frame">
-      <div class="display-result">0</div>
+      <div class="display"></div>
       <div class="first row">
-        <div class="button">AC</div>
-        <div class="button">+/-</div>
-        <div class="button">%</div>
-        <div class="button last">/</div>
+        <button onclick="clearDisplay()" class="button">AC</button>
+        <button onclick="appendDisplay('/')" class="button last">/</button>
       </div>
 
       <div class="second row">
-        <div class="button number">7</div>
-        <div class="button number">8</div>
-        <div class="button number">9</div>
-        <div class="button last">*</div>
+        <button onclick="appendDisplay('7')" class="button number">7</button>
+        <button onclick="appendDisplay('8')" class="button number">8</button>
+        <button onclick="appendDisplay('9')" class="button number">9</button>
+        <button onclick="appendDisplay('*')" class="button last">*</button>
       </div>
 
       <div class="third row">
-        <div class="button number">4</div>
-        <div class="button number">5</div>
-        <div class="button number">6</div>
-        <div class="button last">-</div>
+        <button onclick="appendDisplay('4')" class="button number">4</button>
+        <button onclick="appendDisplay('5')" class="button number">5</button>
+        <button onclick="appendDisplay('6')" class="button number">6</button>
+        <button onclick="appendDisplay('-')" class="button last">-</button>
       </div>
 
       <div class="fourth row">
-        <div class="button number">1</div>
-        <div class="button number">2</div>
-        <div class="button number">3</div>
-        <div class="button last">+</div>
+        <button onclick="appendDisplay('1')" class="button number">1</button>
+        <button onclick="appendDisplay('2')" class="button number">2</button>
+        <button onclick="appendDisplay('3')" class="button number">3</button>
+        <button onclick="appendDisplay('+')" class="button last">+</button>
       </div>
 
       <div class="fifth row">
-        <div class="button first number">0</div>
-        <div class="button number">.</div>
-        <div class="button last">=</div>
+        <button onclick="appendDisplay('0')" class="button first number">
+          0
+        </button>
+        <button onclick="appendDisplay('.')" class="button number">.</button>
+        <button onclick="calculate()" class="button last">=</button>
       </div>
     </div>
-    <script src="./script.js" defer></script>
+    <script src="./script.js"></script>
   </body>
 </html>
